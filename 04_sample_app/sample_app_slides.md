@@ -28,7 +28,7 @@
 
       def self.create(attrs)
         res = RestClient.post("#{URL}",
-                    {:user => attrs}.to_json)
+                  {:user => attrs}.to_json)
         new JSON.parse(res.body)
       end
     end

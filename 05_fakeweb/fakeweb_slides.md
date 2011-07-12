@@ -12,8 +12,8 @@
     describe "with a user" do
       it "finds it" do
         FakeWeb.register_uri(:get, 
-          "http://users.example.org/users/1",
-          :body => {:name => "Foo"}.to_json)
+         "http://users.example.org/users/1",
+         :body => {:name => "Foo"}.to_json)
 
         u = User.get(1)
         u.name.should == "Foo"
@@ -23,7 +23,7 @@
 !SLIDE fullscreen top larger
 ![](thumbs_up.jpg)
 # Not bad
-<!--flickr mar00ned-->
+<span class="flickr caption">mar00ned</span>
 
 !SLIDE
 # Testing at HTTP layer
@@ -31,10 +31,10 @@
 !SLIDE
 # Good coverage of the library
 
-!SLIDE fullscreen bottom
+!SLIDE fullscreen top
 ![](thumbs_down.jpg)
 # Problems?
-<!--flickr quinnanya-->
+<span class="flickr caption">quinnanya</span>
 
 !SLIDE
 # Reaches around the library to setup state

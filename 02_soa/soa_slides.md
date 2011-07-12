@@ -6,9 +6,18 @@
 # Engine Yard Architecture
 ![](ey_arch.png)
 
-!SLIDE fullscreen
+!SLIDE fullscreen bottom larger
 ![](awesome.jpg)
-<!--flickr headlouse-->
+# Services?
+<span class="flickr caption">headlouse</span>
+
+!SLIDE
+# Single Responsibility Principal
+## aka The Unix Philosphy
+## do one thing and do it well
+
+!SLIDE
+# Smaller Code Bases
 
 !SLIDE
 # But how do we test?
@@ -19,5 +28,5 @@
 !SLIDE fullscreen bottom larger
 ![](fail.jpg)
 # It's hard
-<!--flickr coda2 -->
+<span class="flickr caption">coda2</span>
 

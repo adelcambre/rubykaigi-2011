@@ -1,0 +1,9 @@
+!SLIDE commandline incremental
+    $ rake spec:mocked
+    (in /Users/adelcambre/p/ey_sso)
+    ...............................*.....**......
+    .............................................
+    .................
+    Finished in 11.161133 seconds
+
+    107 examples, 0 failures, 3 pending

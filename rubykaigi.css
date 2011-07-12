@@ -29,10 +29,21 @@ h1,h2,h3 {
   font-weight: 300;
 }
 
-.sh_sourceCode {
-  background-color: transparent;
+pre.sh_sourceCode {
   margin: 0;
   margin-left: -1em;
+  border: 2px solid #4C4B4B;
+  background-color: black;
+  -webkit-border-radius: 15px;
+  padding: 10px;
+  box-shadow: black 0 5px 5px;
+}
+
+.commandline code.command {
+  color: white;
+}
+.commandline code.result {
+  color: white;
 }
 
 img {
@@ -41,7 +52,7 @@ img {
 }
 
 span.callout {
-  color: #f479d8;
+  color: #f479d8 !important;
 }
 
 .fullscreen {
@@ -65,4 +76,23 @@ span.callout {
 }
 .fullscreen.top  h1 {
   top: 0px;
+}
+
+.flickr:before {
+  background: url("flickr_dots.png") 0 0 no-repeat;
+  content: "";
+  width: 38px;
+  height: 20px;
+  float: left;
+  margin-right: 5px;
+}
+
+span.caption {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 20px;
+  background: rgba(0,0,0,0.5);
+  padding: 5px;
+  -webkit-border-radius: 5px;
 }
