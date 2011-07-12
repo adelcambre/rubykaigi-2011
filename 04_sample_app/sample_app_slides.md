@@ -22,12 +22,12 @@
     class User
       URL = "http://users.example.org/users"
       def self.get(id)
-        res = Restclient.get("#{URL}/#{id}")
+        res = RestClient.get("#{URL}/#{id}")
         new JSON.parse(res)
       end
 
       def self.create(attrs)
-        res = Restclient.post("#{URL}",
+        res = RestClient.post("#{URL}",
                     {:user => attrs}.to_json)
         new JSON.parse(res.body)
       end

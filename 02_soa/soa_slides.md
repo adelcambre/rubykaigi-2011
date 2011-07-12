@@ -16,7 +16,7 @@
 !SLIDE larger
 # Well...
 
-!SLIDE fullscreen larger
+!SLIDE fullscreen bottom larger
 ![](fail.jpg)
 # It's hard
 <!--flickr coda2 -->

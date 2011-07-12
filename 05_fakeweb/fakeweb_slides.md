@@ -1,0 +1,44 @@
+!SLIDE
+# Back to testing
+
+!SLIDE
+# Option 1
+
+!SLIDE
+# Fakeweb
+
+!SLIDE
+    @@@ruby
+    describe "with a user" do
+      it "finds it" do
+        FakeWeb.register_uri(:get, 
+          "http://users.example.org/users/1",
+          :body => {:name => "Foo"}.to_json)
+
+        u = User.get(1)
+        u.name.should == "Foo"
+      end
+    end
+
+!SLIDE fullscreen top larger
+![](thumbs_up.jpg)
+# Not bad
+<!--flickr mar00ned-->
+
+!SLIDE
+# Testing at HTTP layer
+
+!SLIDE
+# Good coverage of the library
+
+!SLIDE fullscreen bottom
+![](thumbs_down.jpg)
+# Problems?
+<!--flickr quinnanya-->
+
+!SLIDE
+# Reaches around the library to setup state
+
+!SLIDE
+# Tests must have intimate knowledge of implementation
+

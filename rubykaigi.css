@@ -10,8 +10,8 @@ div.right h2 {
 }
 
 h1,h2,h3 {
-  text-shadow: 2px 5px 5px #000;
   font-weight: 300;
+  text-shadow: 2px 5px 5px #000;
 }
 
 #footer {
@@ -26,6 +26,7 @@ h1,h2,h3 {
 
 .content {
   margin: 0 5em;
+  font-weight: 300;
 }
 
 .sh_sourceCode {
@@ -51,10 +52,17 @@ span.callout {
   position: relative;
   margin: 0;
   padding: 0;
+  width: 1024px;
+  height: 768px;
 }
 
 .fullscreen h1 {
   position: absolute;
-  bottom: 0px;
   left: 100px;
+}
+.fullscreen.bottom  h1 {
+  bottom: 0px;
+}
+.fullscreen.top  h1 {
+  top: 0px;
 }
