@@ -1,0 +1,22 @@
+div.larger {
+ font-size: 200%;
+}
+
+div.right h2 {
+  text-align: right;
+  padding-right: 5em;
+}
+
+h1,h2,h3 {
+  text-shadow: 2px 5px 5px #000;
+}
+
+#footer {
+  display: none;
+}
+
+.slide {
+  background: url("bg.jpg");
+  color: #ccc;
+  font-family: "Helvetica Neue";
+}

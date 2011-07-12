@@ -1,1 +1,11 @@
-{ "name": "My Preso", "sections": [ {"section":"one"} ]}
+{ "name": "RubyKaigi", "sections": [
+  {"section":"01_intro"},
+  {"section":"02_soa"},
+  {"section":"03_testing"},
+  {"section":"04_sample_app"},
+  {"section":"05_fakeweb"},
+  {"section":"06_built_in_mock"},
+  {"section":"07_artifice"},
+  {"section":"08_toggle"},
+  {"section":"09_conclusion"}
+]}
