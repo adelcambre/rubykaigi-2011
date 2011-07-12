@@ -1,10 +1,22 @@
 !SLIDE
-# Service Oriented<br>Architecture
-
-!SLIDE larger
-# ???
+# Services
+## aka SOA
 
 !SLIDE
 # Engine Yard Architecture
+![](ey_arch.png)
 
-### &lt;lots of boxes&gt;
+!SLIDE fullscreen
+![](awesome.jpg)
+<!--flickr headlouse-->
+
+!SLIDE
+# But how do we test?
+
+!SLIDE larger
+# Well...
+
+!SLIDE fullscreen
+![](fail.jpg)
+<!--flickr coda2 -->
+

@@ -4,7 +4,7 @@
 
 !SLIDE
 # Andy Delcambre
+## (it rhymes with <span class="callout">"Welcome"</span>)
 
 !SLIDE
-# Engine Yard
-
+![](ey.png)

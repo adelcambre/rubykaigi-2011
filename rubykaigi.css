@@ -1,14 +1,17 @@
+@import url(http://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900|Nunito:300,400,700&v2);
+
 div.larger {
  font-size: 200%;
 }
 
 div.right h2 {
   text-align: right;
-  padding-right: 5em;
+  margin-right: 3em;
 }
 
 h1,h2,h3 {
   text-shadow: 2px 5px 5px #000;
+  font-weight: 300;
 }
 
 #footer {
@@ -18,5 +21,27 @@ h1,h2,h3 {
 .slide {
   background: url("bg.jpg");
   color: #ccc;
-  font-family: "Helvetica Neue";
+  font-family: 'Nunito', sans-serif;
+}
+
+.content {
+  margin: 0 5em;
+}
+
+.sh_sourceCode {
+  background-color: transparent;
+  margin: 0;
+}
+
+img {
+  margin: 0 auto;
+  display: block;
+}
+
+span.callout {
+  color: #f479d8;
+}
+
+.fullscreen {
+  margin: 0;
 }
