@@ -31,6 +31,7 @@ h1,h2,h3 {
 .sh_sourceCode {
   background-color: transparent;
   margin: 0;
+  margin-left: -1em;
 }
 
 img {
@@ -44,4 +45,16 @@ span.callout {
 
 .fullscreen {
   margin: 0;
+}
+
+.fullscreen img {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.fullscreen h1 {
+  position: absolute;
+  bottom: 0px;
+  left: 100px;
 }
