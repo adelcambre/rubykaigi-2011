@@ -68,3 +68,9 @@ rake spec:ci 7:32.42 total
 
 !SLIDE
 # We don't deploy until both suites are green
+
+!SLIDE
+# CI Validates the fake
+
+!SLIDE
+# This gives you composability

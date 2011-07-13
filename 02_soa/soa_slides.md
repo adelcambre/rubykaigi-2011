@@ -13,9 +13,8 @@
 <span class="caption flickr">colorblindpicaso</span>
 
 
-!SLIDE fullscreen bottom larger
+!SLIDE fullscreen
 ![](awesome.jpg)
-# Services?
 <span class="flickr caption">headlouse</span>
 
 !SLIDE
@@ -33,12 +32,11 @@
 # Each piece can be deployed separately
 
 !SLIDE
-# Different Teams can work on different services
+# Different teams can work on different services
 
 !SLIDE
 # Engine Yard Architecture
 ![](ey_arch.png)
-
 
 !SLIDE
 # But how do we test?
