@@ -6,43 +6,43 @@ pre.sh_sourceCode {
 }
 
 pre.sh_sourceCode .sh_keyword {
-  color: #fac260;
+  color: #6ad0d3;
   font-weight: normal;
   font-style: normal;
 }
 
 pre.sh_sourceCode .sh_type {
-  color: #00ff00;
+  color: #cbf4a9;
   font-weight: normal;
   font-style: normal;
 }
 
 pre.sh_sourceCode .sh_string {
-  color: #ff8888;
+  color: #cbf4a9;
   font-weight: normal;
   font-style: normal;
 }
 
 pre.sh_sourceCode .sh_regexp {
-  color: #ff8888;
+  color: #fef6ac;
   font-weight: normal;
   font-style: normal;
 }
 
 pre.sh_sourceCode .sh_specialchar {
-  color: #ff22ff;
+  color: #a26aa7;
   font-weight: normal;
   font-style: normal;
 }
 
 pre.sh_sourceCode .sh_comment {
-  color: #0000ff;
+  color: #838a91;
   font-weight: normal;
   font-style: normal;
 }
 
 pre.sh_sourceCode .sh_number {
-  color: #ff8888;
+  color: #5e94dd;
   font-weight: normal;
   font-style: normal;
 }
@@ -137,13 +137,13 @@ pre.sh_sourceCode .sh_value {
   font-style: normal;
 }
 pre.sh_sourceCode .sh_symbol {
-  color: #f88;
+  color: #e6b0d1;
   font-weight: normal;
   font-style: normal;
 }
 
 pre.sh_sourceCode .sh_cbracket {
-  color: #f88;
+  color: #e6b0d1;
   font-weight: normal;
   font-style: normal;
 }
