@@ -53,7 +53,7 @@
 # Best of both worlds
 
 !SLIDE
-# Fake at the HTTP layer for best coverage
+# Fake at the Rack layer for best coverage
 
 !SLIDE
 # Tests have no knowledge of implementation

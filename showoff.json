@@ -3,9 +3,11 @@
   {"section":"02_soa"},
   {"section":"03_sample_app"},
   {"section":"04_testing"},
-  {"section":"05_fakeweb"},
-  {"section":"06_built_in_mock"},
-  {"section":"07_artifice"},
-  {"section":"08_toggle"},
-  {"section":"09_conclusion"}
+  {"section":"05_no_mock"},
+  {"section":"06_fakeweb"},
+  {"section":"07_built_in_mock"},
+  {"section":"08_artifice"},
+  {"section":"09_toggle"},
+  {"section":"10_your_apps"},
+  {"section":"11_conclusion"}
 ]}
