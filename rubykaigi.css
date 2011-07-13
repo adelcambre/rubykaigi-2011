@@ -39,11 +39,9 @@ pre.sh_sourceCode {
   box-shadow: black 0 5px 5px;
 }
 
-.commandline code.command {
+.command {
   color: white;
-}
-.commandline code.result {
-  color: white;
+  font-size: smaller;
 }
 
 img {
@@ -76,6 +74,11 @@ span.callout {
 }
 .fullscreen.top  h1 {
   top: 0px;
+}
+.fullscreen.light h1 {
+  background: rgba(0,0,0,0.6);
+  padding: 5px;
+  -webkit-border-radius: 5px;
 }
 
 .flickr:before {

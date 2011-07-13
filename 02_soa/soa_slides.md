@@ -12,8 +12,8 @@
 <span class="flickr caption">headlouse</span>
 
 !SLIDE
-# Single Responsibility Principal
-## aka The Unix Philosphy
+# Single Responsibility Principle
+## aka The Unix Philosophy
 ## do one thing and do it well
 
 !SLIDE

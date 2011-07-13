@@ -14,8 +14,9 @@
           new(@users[id])
         end
 
-        def self.create(attrs)
-          new(@users[next_id] = attrs)
+        def self.create(atrs)
+          atrs = atrs.merge(:id => next_id)
+          new(@users[atrs[:id]] = atrs)
         end
       end
     end
@@ -25,8 +26,32 @@
     @@@ruby
     describe "with a user" do
       it "finds it" do
-        User.create(:name => "Foo")
-        u = User.get(1)
+        u = User.create(:name => "Foo")
+
+        u = User.get(u.id)
         u.name.should == "Foo"
       end
     end
+
+!SLIDE fullscreen top light
+![](thumbs_up.jpg)
+# Getting Better!
+<span class="caption flickr">vegaseddie</span>
+
+!SLIDE
+# Tests aren't coupled to the implementation
+
+!SLIDE
+# The mock is toggleable!
+## (more on this soon)
+
+!SLIDE fullscreen top light
+![](thumbs_down.jpg)
+# Still not great
+<span class="caption flickr">atonal</span>
+
+!SLIDE
+# Not at HTTP layer
+
+!SLIDE
+# Therefore, a lot of code is not tested
