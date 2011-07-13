@@ -2,13 +2,13 @@
 # Option 2
 
 !SLIDE
-# Build a mock into the library
+# Build a fake into the library
 
 !SLIDE
-# The Mock
+# The Fake
     @@@ruby
     class User
-      def self.enable_mock!
+      def self.testing!
         @users = {}
         def self.get(id)
           new(@users[id])
@@ -42,7 +42,7 @@
 # Tests aren't coupled to the implementation
 
 !SLIDE
-# The mock is toggleable!
+# The fake is toggleable!
 ## (more on this soon)
 
 !SLIDE fullscreen top light

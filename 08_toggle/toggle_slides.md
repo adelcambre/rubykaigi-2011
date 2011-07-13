@@ -5,7 +5,7 @@
     @@@ruby
     # in spec_helper.rb or equivalent
     if ENV["MOCK_USERS"] == "true"
-      User.enable_mock!
+      User.testing!
     end
 
 !SLIDE
@@ -41,10 +41,10 @@ Finished in <span class="callout">411.887547 seconds</span>
 </code></pre>
 
 !SLIDE
-# The tests does not have to change
+# The tests do not have to change
 
 !SLIDE
-# So Continuous Integration Runs both
+# So Continuous Integration runs both
 
 !SLIDE command
 <code><pre>
@@ -53,7 +53,7 @@ $ rake spec:ci
 ...............................*.....**......
 .............................................
 .................
-Finished in 429.935862 seconds
+Finished in <span class="callout">429.935862 seconds</span>
 107 examples, 0 failures, 6 pending
 </code></pre>
 <pre><code>
@@ -61,10 +61,10 @@ Finished in 429.935862 seconds
 ...............................*.....**......
 .............................................
 .................
-Finished in 11.421828 seconds
+Finished in <span class="callout">11.421828 seconds</span>
 107 examples, 0 failures, 3 pending
 rake spec:ci 7:32.42 total
 </code></pre>
 
 !SLIDE
-# We don't deploy, until both suites are green
+# We don't deploy until both suites are green

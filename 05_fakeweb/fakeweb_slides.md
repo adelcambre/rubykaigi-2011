@@ -1,12 +1,15 @@
 !SLIDE
-# Back to testing
-
-!SLIDE
 # Option 1
 
 !SLIDE
 # Fakeweb
 ### https://github.com/chrisk/fakeweb/
+
+!SLIDE
+# Stubs for net/http
+
+!SLIDE
+# NOTE: Not a fake
 
 !SLIDE
     @@@ruby

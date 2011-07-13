@@ -1,7 +1,8 @@
 { "name": "RubyKaigi", "sections": [
   {"section":"01_intro"},
   {"section":"02_soa"},
-  {"section":"04_sample_app"},
+  {"section":"03_sample_app"},
+  {"section":"04_testing"},
   {"section":"05_fakeweb"},
   {"section":"06_built_in_mock"},
   {"section":"07_artifice"},

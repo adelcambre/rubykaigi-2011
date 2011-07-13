@@ -11,15 +11,15 @@
 !SLIDE
     @@@ruby
     class User
-      def self.enable_mock!
+      def self.testing!
         Artifice.activate_with(
-                   MockUsers.new)
+                   FakeUsers.new)
       end
     end
 
 !SLIDE
     @@@ruby
-    class MockUsers < Sinatra::Base
+    class FakeUsers < Sinatra::Base
       @users = {}
       post "/users/" do
         id = next_id
@@ -33,6 +33,18 @@
       end
     end
 
+!SLIDE
+# Same test
+    @@@ruby
+    describe "with a user" do
+      it "finds it" do
+        u = User.create(:name => "Foo")
+
+        u = User.get(u.id)
+        u.name.should == "Foo"
+      end
+    end
+
 !SLIDE fullscreen top
 ![](ftw.jpg)
 <span class="caption flickr">robboudon</span>
@@ -41,7 +53,7 @@
 # Best of both worlds
 
 !SLIDE
-# Mock at the HTTP layer for best coverage
+# Fake at the HTTP layer for best coverage
 
 !SLIDE
 # Tests have no knowledge of implementation

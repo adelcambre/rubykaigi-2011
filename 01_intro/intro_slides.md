@@ -8,3 +8,7 @@
 
 !SLIDE
 ![](ey.png)
+
+!SLIDE fullscreen
+![](sf.jpg)
+<span class="caption flickr">furnari</span>

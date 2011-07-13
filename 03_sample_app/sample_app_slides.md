@@ -2,7 +2,6 @@
 # The Example
 ## User Store
 
-
 !SLIDE
 # The server
     @@@ruby
