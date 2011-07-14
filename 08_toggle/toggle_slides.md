@@ -1,5 +1,6 @@
 !SLIDE
 # Toggleable!
+# 切り替え可能
 
 !SLIDE code
     @@@ruby
@@ -10,9 +11,11 @@
 
 !SLIDE
 # So what does this gain us?
+# どのような利点があるのでしょうか
 
 !SLIDE
 # Very fast mocked specs
+# モックを使ったspecが速い
 
 !SLIDE command
 <pre><code>$ rake spec:mocked
@@ -27,7 +30,9 @@ Finished in <span class="callout">11.161133 seconds</span>
 
 !SLIDE
 # And very thorough integration tests
+# 統合テストが徹底
 ## with a live backend
+## バックエンドが本物
 
 !SLIDE command
 <pre><code>$ rake spec:unmocked
@@ -42,9 +47,11 @@ Finished in <span class="callout">411.887547 seconds</span>
 
 !SLIDE
 # The tests do not have to change
+# テストを弄る必要が無い
 
 !SLIDE
 # So Continuous Integration runs both
+# だから継続テストで両方走る
 
 !SLIDE command
 <code><pre>
@@ -68,19 +75,27 @@ rake spec:ci 7:32.42 total
 
 !SLIDE
 # We don't deploy until both suites are green
+# 弊社では両方のテストスイートがパスするまではデプロイしません
 
 !SLIDE
 # CI Validates the fake
+# CI（継続的インテグレーション）でフェイクを認証
 
 !SLIDE
 # This gives you composability
+# これで組立が可能になります
 
 !SLIDE bullets incremental
 # So when writing an app that uses the client
+# このクライアントを使ったアプリケーションを書く時には
 * You can toggle the fake on
+* フェイクを使い
 
 !SLIDE bullets incremental
 # But with a good test suite in the client
+# クライアントに良いテストスイートを付ける事で
 * You have verified the fake correct
+* フェイクの正当性を証明しました
 * So you rarely need to run without the fake
+* フェイクなしで走らせる事はあまりありません
 
