@@ -49,6 +49,7 @@
 # NOTE: Not a fake
 # フェイクでない事に注意
 ## Despite the name
+## 名前に騙されないように
 
 !SLIDE
     @@@ruby
