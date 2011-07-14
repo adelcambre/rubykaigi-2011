@@ -74,3 +74,13 @@ rake spec:ci 7:32.42 total
 
 !SLIDE
 # This gives you composability
+
+!SLIDE bullets incremental
+# So when writing an app that uses the client
+* You can toggle the fake on
+
+!SLIDE bullets incremental
+# But with a good test suite in the client
+* You have verified the fake correct
+* So you rarely need to run without the fake
+

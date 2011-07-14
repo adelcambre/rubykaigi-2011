@@ -23,9 +23,6 @@
 ## do one thing and do it well
 
 !SLIDE
-# Force strict Object Oriented Programming
-
-!SLIDE
 # Smaller Code Bases
 
 !SLIDE
