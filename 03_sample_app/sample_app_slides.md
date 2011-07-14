@@ -1,9 +1,12 @@
 !SLIDE
 # The Example
+# 例
 ## User Store
+## ユーザ
 
 !SLIDE
 # The server
+# サーバのコード
     @@@ruby
     class Users < Sinatra::Base
       post "/users/" do
@@ -17,6 +20,7 @@
 
 !SLIDE
 # The client
+# クライアントのコード
     @@@ruby
     class User
       URL = "http://users.example.org/users"
