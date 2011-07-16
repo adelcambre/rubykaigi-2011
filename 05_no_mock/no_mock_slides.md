@@ -1,6 +1,5 @@
 !SLIDE
-# Option 1
-# 選択肢其の壱
+# Tests
 
 !SLIDE
 # No mock at all

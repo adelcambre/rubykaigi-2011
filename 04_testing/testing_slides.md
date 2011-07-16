@@ -1,6 +1,5 @@
 !SLIDE
-# Back to testing
-# テストに話を戻しましょう。
+# Maybe a <span class="callout">mock</a> is what we need?
 
 !SLIDE
 # Some terminology
@@ -17,7 +16,6 @@
 !SLIDE code
     @@@ruby
     it "works" do
-      user = mock("user")
       user.should_receive(:send_email).once
       user.process_upgrade
     end
@@ -53,8 +51,4 @@
 !SLIDE
 # Hence the title of my talk
 # それで演題にも「モック」という言葉を使いました
-
-!SLIDE
-# This talk is actually about <span class="callout">fakes</span>
-# でも、ここではフェイクの話をします。
 

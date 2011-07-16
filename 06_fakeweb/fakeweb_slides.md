@@ -1,6 +1,5 @@
 !SLIDE
-# Option 2
-# 選択肢其の弐
+# Next step?
 
 !SLIDE
 # Stubbing things out

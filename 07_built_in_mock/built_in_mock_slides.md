@@ -1,6 +1,5 @@
 !SLIDE
-# Option 3
-# 選択肢其の参
+# Next step?
 
 !SLIDE
 # Build a fake into the library

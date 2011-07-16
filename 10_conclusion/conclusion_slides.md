@@ -33,7 +33,7 @@
 # 実際のサーバをモックとして使えないでしょうか
 
 !SLIDE
-# We have done exactly that in a few limited cases
+# We have done this in a few limited cases
 # 限られたケースでは実践済み
 
 !SLIDE
