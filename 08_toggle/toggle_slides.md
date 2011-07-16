@@ -85,17 +85,23 @@ rake spec:ci 7:32.42 total
 # This gives you composability
 # これで組立が可能になります
 
-!SLIDE bullets incremental
+!SLIDE
 # So when writing an app that uses the client
 # このクライアントを使ったアプリケーションを書く時には
-* You can toggle the fake on
-* フェイクを使い
+
+!SLIDE
+# You can toggle the fake on
+# フェイクを使い
 
 !SLIDE bullets incremental
 # But with a good test suite in the client
 # クライアントに良いテストスイートを付ける事で
-* You have verified the fake correct
-* フェイクの正当性を証明しました
-* So you rarely need to run without the fake
-* フェイクなしで走らせる事はあまりありません
+
+!SLIDE
+# You have verified the fake correct
+# フェイクの正当性を証明しました
+
+!SLIDE
+# So you rarely need to run without the fake
+# フェイクなしで走らせる事はあまりありません
 

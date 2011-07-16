@@ -42,7 +42,7 @@
 
 !SLIDE larger
 # Thanks!
-# ご静聴有り難うございました
+## ご静聴有り難うございました
 
 !SLIDE
 # Thanks to Hiro Asari
@@ -51,7 +51,7 @@
 
 !SLIDE
 # Thanks to Scott Chacon
-# スコット・シャコーン氏
+## スコット・シャコーン氏
 ## for showoff
 ## showoff の開発者
 ### https://github.com/schacon/showoff

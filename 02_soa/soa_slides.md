@@ -7,13 +7,13 @@
 !SLIDE top fullscreen light
 ![](hands1.jpg)
 # Who knows SOA?
-# SOAをご存知ですか？
+## SOAをご存知ですか？
 <span class="caption flickr">ducdigital</span>
 
 !SLIDE bottom fullscreen light
 ![](hands2.jpg)
 # Who uses SOA?
-# SOAをお使いですか？
+## SOAをお使いですか？
 <span class="caption flickr">colorblindpicaso</span>
 
 
@@ -54,9 +54,9 @@
 # Well...
 # うーん…
 
-!SLIDE fullscreen bottom larger
+!SLIDE fullscreen bottom
 ![](fail.jpg)
 # It's hard
-# 難しいです
+## 難しいです
 <span class="flickr caption">coda2</span>
 

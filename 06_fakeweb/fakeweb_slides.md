@@ -75,10 +75,10 @@
       u.name.should == "Foo"
     end
 
-!SLIDE fullscreen top larger
+!SLIDE fullscreen top
 ![](thumbs_up.jpg)
 # Not bad
-# まずますの出来
+## まずますの出来
 <span class="flickr caption">mar00ned</span>
 
 !SLIDE
@@ -92,7 +92,7 @@
 !SLIDE fullscreen top
 ![](thumbs_down.jpg)
 # Problems
-# 問題点
+## 問題点
 <span class="flickr caption">quinnanya</span>
 
 !SLIDE

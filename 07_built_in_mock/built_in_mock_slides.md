@@ -42,7 +42,7 @@
 !SLIDE fullscreen top light
 ![](thumbs_up.jpg)
 # Getting Better!
-# 段々良くなってますね！
+## 段々良くなってますね！
 <span class="caption flickr">vegaseddie</span>
 
 !SLIDE
@@ -53,10 +53,10 @@
 # The fake is toggleable!
 # フェイクは切り替え可能
 
-!SLIDE fullscreen top light
+!SLIDE fullscreen bottom light
 ![](thumbs_down.jpg)
 # Still not great
-# でもまだ今一つです
+## でもまだ今一つです
 <span class="caption flickr">atonal</span>
 
 !SLIDE
@@ -121,7 +121,7 @@
       end
     end
 
-!SLIDE fullscreen top
+!SLIDE fullscreen
 ![](ftw.jpg)
 <span class="caption flickr">robboudon</span>
 
