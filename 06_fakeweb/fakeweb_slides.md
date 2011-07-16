@@ -1,5 +1,6 @@
 !SLIDE
 # Next step?
+# 次のステップは？
 
 !SLIDE
 # Stubbing things out

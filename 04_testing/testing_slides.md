@@ -1,5 +1,6 @@
 !SLIDE
 # Maybe a <span class="callout">mock</a> is what we need?
+# もしかして、「モック」が必要かも
 
 !SLIDE
 # Some terminology
