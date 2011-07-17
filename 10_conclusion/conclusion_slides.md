@@ -37,6 +37,28 @@
 # 限られたケースでは実践済み
 
 !SLIDE
+    @@@ruby
+    Artifice.activate_with(
+      Rack::Builder.new do
+        map "#{URL_FOR_EY_SSO}/" do
+          run HaxMockMoiApi.new
+        end
+        map "#{URL_FOR_TRESFIESTAS}/" do
+          run Tresfiestas::Application
+        end
+        map "#{URL_FOR_AWSM}/" do
+          run FakeAWSM
+        end
+        map "#{URL_FOR_LISONJA}/" do
+          run Lisonja
+        end
+        map "#{URL_FOR_SECRET_ADMIN}/" do
+          run SecretAdmin
+        end
+      end
+
+
+!SLIDE
 # Not enough experience to recommend it yet
 # まだ経験不足で推奨するほどではない
 
