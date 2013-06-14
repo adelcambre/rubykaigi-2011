@@ -1,0 +1,109 @@
+@import url(http://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900|Nunito:300,400,700&v2);
+
+div.larger {
+ font-size: 200%;
+}
+
+div.right h2 {
+  text-align: right;
+  margin-right: 3em;
+}
+
+h1,h2,h3 {
+  font-weight: 300;
+  text-shadow: 2px 5px 5px #000;
+}
+
+#footer {
+  display: none;
+}
+
+.slide {
+  background: url("bg.jpg");
+  color: #ccc;
+  font-family: 'Nunito', sans-serif;
+}
+
+.content {
+  margin: 0 5em;
+  font-weight: 300;
+}
+
+pre.sh_sourceCode {
+  margin: 0;
+  margin-left: -1em;
+  border: 2px solid #4C4B4B;
+  background-color: black;
+  -webkit-border-radius: 15px;
+  padding: 10px;
+  box-shadow: black 0 5px 5px;
+}
+
+.command {
+  color: white;
+  font-size: smaller;
+}
+
+img {
+  margin: 0 auto;
+  display: block;
+}
+
+span.callout {
+  color: #f479d8 !important;
+}
+
+.fullscreen {
+  margin: 0;
+}
+
+.fullscreen img {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 1024px;
+  height: 768px;
+}
+
+.fullscreen h1, .fullscreen h2 {
+  position: absolute;
+  left: 100px;
+  font-size: 5em;
+  background: rgba(0,0,0,0.6);
+  padding: 5px;
+  -webkit-border-radius: 5px;
+}
+.fullscreen.bottom  h1 {
+  bottom: 0px;
+}
+.fullscreen.top  h1 {
+  top: 0px;
+}
+.fullscreen.bottom  h2 {
+  bottom: 150px;
+}
+.fullscreen.bottom.larger  h2 {
+  bottom: 200px;
+}
+.fullscreen.top  h2 {
+  top: 150px;
+}
+
+.flickr:before {
+  background: url("flickr_dots.png") 0 0 no-repeat;
+  content: "";
+  width: 38px;
+  height: 20px;
+  float: left;
+  margin-right: 5px;
+}
+
+span.caption {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 20px;
+  background: rgba(0,0,0,0.5);
+  padding: 5px;
+  -webkit-border-radius: 5px;
+}

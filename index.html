@@ -1,0 +1,784 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>RubyKaigi</title>
+
+  <link rel="stylesheet" href="./css/reset.css" type="text/css"/>
+  <link rel="stylesheet" href="./css/showoff.css" type="text/css"/>
+
+  <script type="text/javascript" src="./js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src="./js/jquery-print.js"></script>
+  <script type="text/javascript" src="./js/jquery.batchImageLoad.js"></script>
+
+  <script type="text/javascript" src="./js/jquery.doubletap-0.1.js"></script>
+
+  <script type="text/javascript" src="./js/fg.menu.js"></script>
+  <script type="text/javascript" src="./js/showoff.js"></script>
+  <script type="text/javascript" src="./js/jTypeWriter.js"> </script>
+  <script type="text/javascript" src="./js/sh_main.min.js"></script>
+  <script type="text/javascript" src="./js/core.js"></script>
+  <script type="text/javascript" src="./js/showoffcore.js"></script>
+
+  <link type="text/css" href="./css/fg.menu.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/theme/ui.all.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/sh_style.css" rel="stylesheet" >
+
+  
+    <link rel="stylesheet" href="file/000_sh_vim-dark.css" type="text/css"/>
+  
+    <link rel="stylesheet" href="file/rubykaigi.css" type="text/css"/>
+  
+
+  
+
+  <script type="text/javascript">
+  $(function(){
+    setupPreso(false, './');
+  });
+  </script>
+</head>
+
+<body>
+
+
+<a tabindex="0" href="#search-engines" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="navmenu"><span class="ui-icon ui-icon-triangle-1-s"></span>slides</a>
+<div id="navigation" class="hidden"></div>
+
+<div id="help">
+  <table>
+    <tr><td class="key">space, &rarr;</td><td>next slide</td></tr>
+    <tr><td class="key">&larr;</td><td>previous slide</td></tr>
+    <tr><td class="key">d</td><td>debug mode</td></tr>
+    <tr><td class="key">## &lt;ret&gt;</td><td>go to slide #</td></tr>
+    <tr><td class="key">c</td><td>table of contents (vi)</td></tr>
+    <tr><td class="key">f</td><td>toggle footer</td></tr>
+    <tr><td class="key">r</td><td>reload slides</td></tr>
+    <tr><td class="key">z</td><td>toggle help (this)</td></tr>
+  </table>
+</div>
+
+<div class="buttonNav">
+  <input type="submit" onClick="prevStep();" value="prev"/>
+  <input type="submit" onClick="nextStep();" value="next"/>
+</div>
+
+<div id="preso">loading presentation...</div>
+<div id="footer">
+  <span id="slideInfo"></span>
+  <span id="debugInfo"></span>
+  <span id="notesInfo"></span>
+</div>
+
+<div id="slides" class="offscreen" style="display:none;">
+<div class="slide" data-transition="none"><div class="content" ref="01_intro/intro_slides/1">
+<h1>Toggleable Mocks</h1>
+
+<h1>&#x5207;&#x308A;&#x66FF;&#x3048;&#x53EF;&#x80FD;&#x306A;&#x30E2;&#x30C3;&#x30AF;</h1>
+
+<h2>Testing in a Service Oriented Architecture</h2>
+
+<h2>&#x30B5;&#x30FC;&#x30D3;&#x30B9;&#x6307;&#x5411;&#x30A2;&#x30FC;&#x30AD;&#x30C6;&#x30AF;&#x30C1;&#x30E3;&#x306B;&#x304A;&#x3051;&#x308B;&#x30C6;&#x30B9;&#x30C8;</h2></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="01_intro/intro_slides/2">
+<h1>Andy Delcambre</h1>
+
+<h1>&#x30A2;&#x30F3;&#x30C7;&#x30A3;&#x30FC;&#x30FB;&#x30C7;&#x30EB;&#x30AB;&#x30E0;</h1>
+
+<h2>(rhymes with <span class="callout">"Welcome"</span>)</h2>
+
+<h2>&#x300C;&#x30A6;&#x30A7;&#x30EB;&#x30AB;&#x30E0;&#x300D;&#x3068;&#x540C;&#x3058;&#x811A;&#x97FB;</h2></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="01_intro/intro_slides/3">
+<h1>@adelcambre</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="01_intro/intro_slides/4">
+<p><img src="file:///Users/adelcambre/github/rubykaigi-2011/01_intro/ey.png" alt=""/></p></div>
+</div><div class="slide" data-transition="none"><div class="content fullscreen" ref="01_intro/intro_slides/5">
+<p><img src="file:///Users/adelcambre/github/rubykaigi-2011/01_intro/sf.jpg" alt=""/>
+<span class="caption flickr">furnari</span></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="01_intro/intro_slides/6">
+<h1>If you understand english raise your hand</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="01_intro/intro_slides/7">
+<h1>&#x65E5;&#x672C;&#x8A9E;&#x308F;&#x304B;&#x308B;&#x4EBA;&#x6319;&#x624B;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="02_soa/soa_slides/1">
+<h1>Services</h1>
+
+<h1>&#x30B5;&#x30FC;&#x30D3;&#x30B9;</h1>
+
+<h2>aka SOA</h2>
+
+<h2>&#x5225;&#x540D; SOA</h2></div>
+</div><div class="slide" data-transition="none"><div class="content top fullscreen light" ref="02_soa/soa_slides/2">
+<p><img src="file:///Users/adelcambre/github/rubykaigi-2011/02_soa/hands1.jpg" alt=""/></p>
+
+<h1>Who knows SOA?</h1>
+
+<h2>SOA&#x3092;&#x3054;&#x5B58;&#x77E5;&#x3067;&#x3059;&#x304B;&#xFF1F;</h2>
+
+<p><span class="caption flickr">ducdigital</span></p></div>
+</div><div class="slide" data-transition="none"><div class="content bottom fullscreen light" ref="02_soa/soa_slides/3">
+<p><img src="file:///Users/adelcambre/github/rubykaigi-2011/02_soa/hands2.jpg" alt=""/></p>
+
+<h1>Who uses SOA?</h1>
+
+<h2>SOA&#x3092;&#x304A;&#x4F7F;&#x3044;&#x3067;&#x3059;&#x304B;&#xFF1F;</h2>
+
+<p><span class="caption flickr">colorblindpicaso</span></p></div>
+</div><div class="slide" data-transition="none"><div class="content fullscreen" ref="02_soa/soa_slides/4">
+<p><img src="file:///Users/adelcambre/github/rubykaigi-2011/02_soa/awesome.jpg" alt=""/>
+<span class="flickr caption">headlouse</span></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="02_soa/soa_slides/5">
+<h1>Single Responsibility Principle</h1>
+
+<h1>&#x5358;&#x4E00;&#x8CAC;&#x4EFB;&#x306E;&#x539F;&#x5247;</h1>
+
+<h2>aka The Unix Philosophy</h2>
+
+<h2>&#x5225;&#x540D; UNIX&#x306E;&#x7CBE;&#x795E;</h2>
+
+<h2>do one thing and do it well</h2>
+
+<h2>&#x305F;&#x3063;&#x305F;&#x4E00;&#x3064;&#x306E;&#x4E8B;&#x3092;&#x4E0A;&#x624B;&#x306B;&#x3084;&#x308B;</h2></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="02_soa/soa_slides/6">
+<h1>Smaller Code Bases</h1>
+
+<h1>&#x5C11;&#x306A;&#x3044;&#x30B3;&#x30FC;&#x30C9;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="02_soa/soa_slides/7">
+<h1>Each piece can be deployed separately</h1>
+
+<h1>&#x305D;&#x308C;&#x305E;&#x308C;&#x306E;&#x90E8;&#x54C1;&#x3092;&#x5225;&#x3005;&#x306B;&#x30C7;&#x30D7;&#x30ED;&#x30A4;&#x51FA;&#x6765;&#x308B;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="02_soa/soa_slides/8">
+<h1>Different teams can work on different services</h1>
+
+<h1>&#x8907;&#x6570;&#x306E;&#x30C1;&#x30FC;&#x30E0;&#x304C;&#x7570;&#x308B;&#x30B5;&#x30FC;&#x30D3;&#x30B9;&#x3092;&#x958B;&#x767A;&#x3067;&#x304D;&#x308B;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="02_soa/soa_slides/9">
+<h1>Engine Yard Architecture</h1>
+
+<h1>&#x5F0A;&#x793E; Engine Yard &#x306E;&#x4F8B;</h1>
+
+<p><img src="file:///Users/adelcambre/github/rubykaigi-2011/02_soa/ey_arch.png" alt=""/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="02_soa/soa_slides/10">
+<h1>But how do we test?</h1>
+
+<h1>&#x3067;&#x3082;&#x3069;&#x3046;&#x3084;&#x3063;&#x3066;&#x30C6;&#x30B9;&#x30C8;&#x3059;&#x308B;&#xFF1F;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content larger" ref="02_soa/soa_slides/11">
+<h1>Well...</h1>
+
+<h1>&#x3046;&#x30FC;&#x3093;&#x2026;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content fullscreen bottom" ref="02_soa/soa_slides/12">
+<p><img src="file:///Users/adelcambre/github/rubykaigi-2011/02_soa/fail.jpg" alt=""/></p>
+
+<h1>It's hard</h1>
+
+<h2>&#x96E3;&#x3057;&#x3044;&#x3067;&#x3059;</h2>
+
+<p><span class="flickr caption">coda2</span></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="03_sample_app/sample_app_slides/1">
+<h1>The Example</h1>
+
+<h1>&#x4F8B;</h1>
+
+<h2>User Store</h2>
+
+<h2>&#x30E6;&#x30FC;&#x30B6;</h2></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="03_sample_app/sample_app_slides/2">
+<h1>The server</h1>
+
+<h1>&#x30B5;&#x30FC;&#x30D0;&#x306E;&#x30B3;&#x30FC;&#x30C9;</h1>
+
+<pre class="sh_ruby"><code>class Users &lt; Sinatra::Base
+  post "/users/" do
+    User.create(params[:user]).to_json
+  end
+
+  get "/users/:id" do
+    User.get(id).to_json
+  end
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="03_sample_app/sample_app_slides/3">
+<h1>The client</h1>
+
+<h1>&#x30AF;&#x30E9;&#x30A4;&#x30A2;&#x30F3;&#x30C8;&#x306E;&#x30B3;&#x30FC;&#x30C9;</h1>
+
+<pre class="sh_ruby"><code>class User
+  URL = "http://users.example.org/users"
+  def self.get(id)
+    res = RestClient.get("#{URL}/#{id}")
+    new JSON.parse(res)
+  end
+
+  def self.create(attrs)
+    res = RestClient.post("#{URL}",
+              {:user =&gt; attrs}.to_json)
+    new JSON.parse(res.body)
+  end
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="05_no_mock/no_mock_slides/1">
+<h1>Tests</h1>
+
+<h1>&#x30C6;&#x30B9;&#x30C8;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="05_no_mock/no_mock_slides/2">
+<h1>No mock at all</h1>
+
+<h1>&#x30E2;&#x30C3;&#x30AF;&#x3092;&#x4F7F;&#x308F;&#x306A;&#x3044;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content code" ref="05_no_mock/no_mock_slides/3">
+<pre class="sh_ruby"><code>describe "with a user" do
+  it "finds it" do
+    u = User.create(:name =&gt; "Foo")
+
+    u = User.get(u.id)
+    u.name.should == "Foo"
+  end
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="05_no_mock/no_mock_slides/4">
+<h1>A good starting place</h1>
+
+<h1>&#x521D;&#x3081;&#x3068;&#x3057;&#x3066;&#x306F;&#x307E;&#x3042;&#x307E;&#x3042;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="05_no_mock/no_mock_slides/5">
+<h1>Spin up a development server and start testing</h1>
+
+<h1>&#x958B;&#x767A;&#x30B5;&#x30FC;&#x30D0;&#x3092;&#x8D77;&#x52D5;&#x3057;&#x3066;&#x30C6;&#x30B9;&#x30C8;&#x3092;&#x59CB;&#x3081;&#x307E;&#x3057;&#x3087;&#x3046;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="05_no_mock/no_mock_slides/6">
+<h1>Very good coverage</h1>
+
+<h1>&#x9AD8;&#x5EA6;&#x306A;&#x30B3;&#x30FC;&#x30C9;&#x30AB;&#x30D0;&#x30EC;&#x30C3;&#x30B8;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="05_no_mock/no_mock_slides/7">
+<h1>Downsides</h1>
+
+<h1>&#x554F;&#x984C;&#x70B9;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="05_no_mock/no_mock_slides/8">
+<h1>Very slow tests</h1>
+
+<h1>&#x9045;&#x3044;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="05_no_mock/no_mock_slides/9">
+<h1>Can't reset state</h1>
+
+<h1>&#x30C6;&#x30B9;&#x30C8;&#x304C;&#x59CB;&#x307E;&#x3063;&#x305F;&#x3089;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306E;&#x72B6;&#x614B;&#x3092;&#x5143;&#x306B;&#x623B;&#x305B;&#x306A;&#x3044;</h1>
+
+<h2>You have to teardown everything after every test</h2>
+
+<h2>&#x30C6;&#x30B9;&#x30C8;&#x306E;&#x5EA6;&#x306B;&#x5168;&#x3066;&#x3084;&#x308A;&#x76F4;&#x3059;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308B;</h2></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="04_testing/testing_slides/1">
+<h1>Maybe a <span class="callout">mock</span> is what we need?</h1>
+
+<h1>&#x3082;&#x3057;&#x304B;&#x3057;&#x3066;&#x3001;&#x300C;&#x30E2;&#x30C3;&#x30AF;&#x300D;&#x304C;&#x5FC5;&#x8981;&#x304B;&#x3082;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="04_testing/testing_slides/2">
+<h1>Some terminology</h1>
+
+<h1>&#x7528;&#x8A9E;&#x306E;&#x78BA;&#x8A8D;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="04_testing/testing_slides/3">
+<h1>Mock</h1>
+
+<h1>&#x30E2;&#x30C3;&#x30AF;</h1>
+
+<ul>
+<li>Objects that act like the real thing</li>
+<li>&#x672C;&#x7269;&#x306E;&#x69D8;&#x306B;&#x632F;&#x308B;&#x821E;&#x3046;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;</li>
+<li>But with <span class="callout">expectations</span> on the calls made</li>
+<li>&#x4F46;&#x3057;&#x3069;&#x306E;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x304C;&#x547C;&#x3073;&#x51FA;&#x3055;&#x308C;&#x308B;&#x304B;&#x77E5;&#x3063;&#x3066;&#x3044;&#x308B;&#x7269;</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content code" ref="04_testing/testing_slides/4">
+<pre class="sh_ruby"><code>it "works" do
+  user.should_receive(:send_email).once
+  user.process_upgrade
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="04_testing/testing_slides/5">
+<h1>Stub</h1>
+
+<h1>&#x30B9;&#x30BF;&#x30D6;</h1>
+
+<h2>Replacing certain methods on an object with dummy data</h2>
+
+<h2>&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306B;&#x5B9A;&#x7FA9;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x4EEE;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x3067;&#x7F6E;&#x304D;&#x63DB;&#x3048;&#x308B;&#x7269;</h2></div>
+</div><div class="slide" data-transition="none"><div class="content code" ref="04_testing/testing_slides/6">
+<pre class="sh_ruby"><code>it "works" do
+  user.stub!(:name).and_return("Andy")
+
+  user.greeting.should == "Hello Andy"
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="04_testing/testing_slides/7">
+<h1>Fake</h1>
+
+<h1>&#x30D5;&#x30A7;&#x30A4;&#x30AF;</h1>
+
+<h2>A replacement object that behaves like the real thing, but isn't suitable for production</h2>
+
+<h2>&#x672C;&#x7269;&#x306E;&#x69D8;&#x306B;&#x632F;&#x308B;&#x821E;&#x3046;&#x4EE3;&#x66FF;&#x306E;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3060;&#x304C;&#x3001;&#x672C;&#x756A;&#x306B;&#x306F;&#x4F7F;&#x3048;&#x306A;&#x3044;&#x7269;</h2></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="04_testing/testing_slides/8">
+<h1>Example: an in memory sqlite database</h1>
+
+<h1>&#x4F8B;: &#x30E1;&#x30E2;&#x30EA;&#x306B;&#x683C;&#x7D0D;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;sqlite&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="04_testing/testing_slides/9">
+<h1>People tend to refer to all of these as <span class="callout">"mocks"</span></h1>
+
+<h1>&#x3053;&#x308C;&#x3089;&#x5168;&#x3066;&#x3092;&#x300C;&#x30E2;&#x30C3;&#x30AF;&#x300D;&#x3068;&#x547C;&#x3076;&#x4EBA;&#x3082;&#x591A;&#x3044;&#x3067;&#x3059;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="04_testing/testing_slides/10">
+<h1>Hence the title of my talk</h1>
+
+<h1>&#x305D;&#x308C;&#x3067;&#x6F14;&#x984C;&#x306B;&#x3082;&#x300C;&#x30E2;&#x30C3;&#x30AF;&#x300D;&#x3068;&#x3044;&#x3046;&#x8A00;&#x8449;&#x3092;&#x4F7F;&#x3044;&#x307E;&#x3057;&#x305F;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="06_fakeweb/fakeweb_slides/1">
+<h1>Next step?</h1>
+
+<h1>&#x6B21;&#x306E;&#x30B9;&#x30C6;&#x30C3;&#x30D7;&#x306F;&#xFF1F;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="06_fakeweb/fakeweb_slides/2">
+<h1>Stubbing things out</h1>
+
+<h1>&#x30B9;&#x30BF;&#x30D6;&#x3092;&#x4F7F;&#x3046;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="06_fakeweb/fakeweb_slides/3">
+<h1>Method Stubs</h1>
+
+<h1>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x30B9;&#x30BF;&#x30D6;&#x306B;&#x3059;&#x308B;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content code" ref="06_fakeweb/fakeweb_slides/4">
+<pre class="sh_ruby"><code>it "works" do
+  user = mock(User)
+  User.stub!(:get).with(1).
+      and_return(user)
+  user.stub!(:name).and_return("foo")
+
+  User.get(1).name.should == "foo"
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="06_fakeweb/fakeweb_slides/5">
+<h1>A logical next step</h1>
+
+<h1>&#x6B21;&#x306E;&#x6BB5;&#x968E;&#x3068;&#x3057;&#x3066;&#x306F;&#x59A5;&#x5F53;&#x306A;&#x3068;&#x3053;&#x308D;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="06_fakeweb/fakeweb_slides/6">
+<h1>Faster</h1>
+
+<h1>&#x901F;&#x3044;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="06_fakeweb/fakeweb_slides/7">
+<h1>Because nothing is tested</h1>
+
+<h1>&#x30C6;&#x30B9;&#x30C8;&#x3057;&#x3066;&#x306A;&#x3044;&#x304B;&#x3089;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="06_fakeweb/fakeweb_slides/8">
+<h1>We can do better, even with stubs</h1>
+
+<h1>&#x30B9;&#x30BF;&#x30D6;&#x3092;&#x4F7F;&#x3063;&#x3066;&#x3082;&#x6539;&#x5584;&#x306F;&#x53EF;&#x80FD;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="06_fakeweb/fakeweb_slides/9">
+<h1>Fakeweb</h1>
+
+<h3>https://github.com/chrisk/fakeweb/</h3></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="06_fakeweb/fakeweb_slides/10">
+<h1>Stubs for net/http</h1>
+
+<h1>net/http &#x306B;&#x76F8;&#x5F53;&#x3059;&#x308B;&#x30B9;&#x30BF;&#x30D6;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="06_fakeweb/fakeweb_slides/11">
+<h1>NOTE: Not a fake</h1>
+
+<h1>&#x30D5;&#x30A7;&#x30A4;&#x30AF;&#x3067;&#x306A;&#x3044;&#x4E8B;&#x306B;&#x6CE8;&#x610F;</h1>
+
+<h2>Despite the name</h2>
+
+<h2>&#x540D;&#x524D;&#x306B;&#x9A19;&#x3055;&#x308C;&#x306A;&#x3044;&#x3088;&#x3046;&#x306B;</h2></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="06_fakeweb/fakeweb_slides/12">
+<pre class="sh_ruby"><code>describe "with a user" do
+  it "finds it" do
+    FakeWeb.register_uri(:get, 
+     "http://users.example.org/users/1",
+     :body =&gt; {:name =&gt; "Foo"}.to_json)
+
+    u = User.get(1)
+    u.name.should == "Foo"
+  end
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="06_fakeweb/fakeweb_slides/13">
+<pre class="sh_ruby"><code>it "creates a user" do
+  FakeWeb.register_uri(:post,
+    "http://users.example.org/users/",
+    :body =&gt; {:name =&gt; "Foo"}.to_json)
+
+  u = User.create(:name =&gt; "Foo")
+  u.name.should == "Foo"
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content fullscreen top" ref="06_fakeweb/fakeweb_slides/14">
+<p><img src="file:///Users/adelcambre/github/rubykaigi-2011/06_fakeweb/thumbs_up.jpg" alt=""/></p>
+
+<h1>Not bad</h1>
+
+<h2>&#x307E;&#x305A;&#x307E;&#x3059;&#x306E;&#x51FA;&#x6765;</h2>
+
+<p><span class="flickr caption">mar00ned</span></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="06_fakeweb/fakeweb_slides/15">
+<h1>Testing at HTTP layer</h1>
+
+<h1>HTTP&#x30EC;&#x30A4;&#x30E4;&#x30FC;&#x3067;&#x306E;&#x30C6;&#x30B9;&#x30C8;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="06_fakeweb/fakeweb_slides/16">
+<h1>Good coverage of the library</h1>
+
+<h1>&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x3092;&#x6059;&#xFF08;&#x3064;&#x3064;&#x304C;&#xFF09;&#x306A;&#x304F;&#x7DB2;&#x7F85;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content fullscreen top" ref="06_fakeweb/fakeweb_slides/17">
+<p><img src="file:///Users/adelcambre/github/rubykaigi-2011/06_fakeweb/thumbs_down.jpg" alt=""/></p>
+
+<h1>Problems</h1>
+
+<h2>&#x554F;&#x984C;&#x70B9;</h2>
+
+<p><span class="flickr caption">quinnanya</span></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="06_fakeweb/fakeweb_slides/18">
+<h1>Reaches around the library to setup state</h1>
+
+<h1>&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x3092;&#x7121;&#x8996;&#x3057;&#x3066;&#x521D;&#x671F;&#x5316;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="06_fakeweb/fakeweb_slides/19">
+<h1>Tests do not use the public API for setup</h1>
+
+<h1>&#x30D1;&#x30D6;&#x30EA;&#x30C3;&#x30AF;API&#x3092;&#x4F7F;&#x308F;&#x305A;&#x306B;&#x521D;&#x671F;&#x5316;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="06_fakeweb/fakeweb_slides/20">
+<h1>Tests must have intimate knowledge of implementation</h1>
+
+<h1>&#x30C6;&#x30B9;&#x30C8;&#x3092;&#x66F8;&#x304F;&#x969B;&#x306B;Fakeweb&#x306E;&#x5185;&#x90E8;&#x5B9F;&#x88C5;&#x3092;&#x719F;&#x77E5;&#x3059;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308B;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="07_built_in_mock/built_in_mock_slides/1">
+<h1>Next step?</h1>
+
+<h1>&#x6B21;&#x306E;&#x30B9;&#x30C6;&#x30C3;&#x30D7;&#x306F;&#xFF1F;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="07_built_in_mock/built_in_mock_slides/2">
+<h1>Build a fake into the library</h1>
+
+<h1>&#x30D5;&#x30A7;&#x30A4;&#x30AF;&#x3092;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x306B;&#x7D44;&#x307F;&#x8FBC;&#x3080;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="07_built_in_mock/built_in_mock_slides/3">
+<h1>A fake ruby object</h1>
+
+<h1>Ruby&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3067;&#x3042;&#x308B;&#x30D5;&#x30A7;&#x30A4;&#x30AF;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="07_built_in_mock/built_in_mock_slides/4">
+<h1>The Fake</h1>
+
+<pre class="sh_ruby"><code>class User
+  def self.testing!
+    @users = {}
+    def self.get(id)
+      new(@users[id])
+    end
+
+    def self.create(atrs)
+      atrs = atrs.merge(:id =&gt; next_id)
+      new(@users[atrs[:id]] = atrs)
+    end
+  end
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="07_built_in_mock/built_in_mock_slides/5">
+<h1>The Test</h1>
+
+<pre class="sh_ruby"><code>describe "with a user" do
+  it "finds it" do
+    u = User.create(:name =&gt; "Foo")
+
+    u = User.get(u.id)
+    u.name.should == "Foo"
+  end
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content fullscreen top light" ref="07_built_in_mock/built_in_mock_slides/6">
+<p><img src="file:///Users/adelcambre/github/rubykaigi-2011/07_built_in_mock/thumbs_up.jpg" alt=""/></p>
+
+<h1>Getting Better!</h1>
+
+<h2>&#x6BB5;&#x3005;&#x826F;&#x304F;&#x306A;&#x3063;&#x3066;&#x307E;&#x3059;&#x306D;&#xFF01;</h2>
+
+<p><span class="caption flickr">vegaseddie</span></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="07_built_in_mock/built_in_mock_slides/7">
+<h1>Tests aren't coupled to the implementation</h1>
+
+<h1>&#x30C6;&#x30B9;&#x30C8;&#x3068;&#x5B9F;&#x88C5;&#x304C;&#x9694;&#x96E2;&#x3055;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="07_built_in_mock/built_in_mock_slides/8">
+<h1>The fake is toggleable!</h1>
+
+<h1>&#x30D5;&#x30A7;&#x30A4;&#x30AF;&#x306F;&#x5207;&#x308A;&#x66FF;&#x3048;&#x53EF;&#x80FD;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content fullscreen bottom light" ref="07_built_in_mock/built_in_mock_slides/9">
+<p><img src="file:///Users/adelcambre/github/rubykaigi-2011/07_built_in_mock/thumbs_down.jpg" alt=""/></p>
+
+<h1>Still not great</h1>
+
+<h2>&#x3067;&#x3082;&#x307E;&#x3060;&#x4ECA;&#x4E00;&#x3064;&#x3067;&#x3059;</h2>
+
+<p><span class="caption flickr">atonal</span></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="07_built_in_mock/built_in_mock_slides/10">
+<h1>Not at HTTP layer</h1>
+
+<h1>&#x30C6;&#x30B9;&#x30C8;&#x306F;HTTP&#x30EC;&#x30A4;&#x30E4;&#x30FC;&#x3067;&#x306F;&#x306A;&#x3044;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="07_built_in_mock/built_in_mock_slides/11">
+<h1>Therefore, a lot of code is not tested</h1>
+
+<h1>&#x3060;&#x304B;&#x3089;&#x3001;&#x30C6;&#x30B9;&#x30C8;&#x3055;&#x308C;&#x3066;&#x3044;&#x306A;&#x3044;&#x90E8;&#x5206;&#x3082;&#x591A;&#x3044;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="07_built_in_mock/built_in_mock_slides/12">
+<h1>We can do better</h1>
+
+<h1>&#x6539;&#x5584;&#x306E;&#x4F59;&#x5730;&#x3042;&#x308A;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="07_built_in_mock/built_in_mock_slides/13">
+<h1>Artifice</h1>
+
+<h3>http://github.com/wycats/artifice</h3></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="07_built_in_mock/built_in_mock_slides/14">
+<h1>Artifice stubs net/http with a Rack App</h1>
+
+<h1>Artifice &#x3067;&#x306F;&#x672C;&#x7269;&#x306E; Rack &#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3092; net/http &#x306E;&#x30B9;&#x30BF;&#x30D6;&#x3068;&#x3057;&#x3066;&#x4F7F;&#x3044;&#x307E;&#x3059;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="07_built_in_mock/built_in_mock_slides/15">
+<h1>An entire fake at the http layer</h1>
+
+<h1>http &#x30EC;&#x30A4;&#x30E4;&#x30FC;&#x306F;&#x5168;&#x3066;&#x30D5;&#x30A7;&#x30A4;&#x30AF;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="07_built_in_mock/built_in_mock_slides/16">
+<pre class="sh_ruby"><code>class User
+  def self.testing!
+    Artifice.activate_with(
+               FakeUsers.new)
+  end
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="07_built_in_mock/built_in_mock_slides/17">
+<pre class="sh_ruby"><code>class FakeUsers &lt; Sinatra::Base
+  @users = {}
+  post "/users/" do
+    id = next_id
+    @users[id] = params[:user].
+                      merge(:id =&gt; id)
+    @users[id].to_json
+  end
+
+  get "/users/:id" do
+    @users[id].to_json
+  end
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="07_built_in_mock/built_in_mock_slides/18">
+<h1>Same test</h1>
+
+<h1>&#x5148;&#x7A0B;&#x3068;&#x540C;&#x3058;&#x30C6;&#x30B9;&#x30C8;&#x304C;&#x4F7F;&#x3048;&#x307E;&#x3059;</h1>
+
+<pre class="sh_ruby"><code>describe "with a user" do
+  it "finds it" do
+    u = User.create(:name =&gt; "Foo")
+
+    u = User.get(u.id)
+    u.name.should == "Foo"
+  end
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content fullscreen" ref="07_built_in_mock/built_in_mock_slides/19">
+<p><img src="file:///Users/adelcambre/github/rubykaigi-2011/07_built_in_mock/ftw.jpg" alt=""/>
+<span class="caption flickr">robboudon</span></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="07_built_in_mock/built_in_mock_slides/20">
+<h1>Best of both worlds</h1>
+
+<h1>&#x30A4;&#x30A4;&#x30C8;&#x30B3;&#x53D6;&#x308A;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="07_built_in_mock/built_in_mock_slides/21">
+<h1>Fake at the Rack layer for best coverage</h1>
+
+<h1>Rack&#x30EC;&#x30A4;&#x30E4;&#x30FC;&#x3067;&#x30D5;&#x30A7;&#x30A4;&#x30AF;&#x3092;&#x4F7F;&#x3044;&#x5E45;&#x5E83;&#x304F;&#x30C6;&#x30B9;&#x30C8;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="07_built_in_mock/built_in_mock_slides/22">
+<h1>Tests have no knowledge of implementation</h1>
+
+<h1>&#x30C6;&#x30B9;&#x30C8;&#x304C;&#x5B9F;&#x88C5;&#x306B;&#x3064;&#x3044;&#x3066;&#x306E;&#x77E5;&#x8B58;&#x3092;&#x5FC5;&#x8981;&#x3068;&#x3057;&#x306A;&#x3044;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="07_built_in_mock/built_in_mock_slides/23">
+<h1>So now that we have this...</h1>
+
+<h1>&#x305D;&#x308D;&#x305D;&#x308D;&#x672C;&#x984C;&#x306B;&#x5165;&#x308A;&#x307E;&#x3059;&#x304B;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="08_toggle/toggle_slides/1">
+<h1>Toggleable!</h1>
+
+<h1>&#x5207;&#x308A;&#x66FF;&#x3048;&#x53EF;&#x80FD;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content code" ref="08_toggle/toggle_slides/2">
+<pre class="sh_ruby"><code># in spec_helper.rb or equivalent
+if ENV["MOCK_USERS"] == "true"
+  User.testing!
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="08_toggle/toggle_slides/3">
+<h1>So what does this gain us?</h1>
+
+<h1>&#x3069;&#x306E;&#x3088;&#x3046;&#x306A;&#x5229;&#x70B9;&#x304C;&#x3042;&#x308B;&#x306E;&#x3067;&#x3057;&#x3087;&#x3046;&#x304B;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="08_toggle/toggle_slides/4">
+<h1>Very fast mocked specs</h1>
+
+<h1>&#x30E2;&#x30C3;&#x30AF;&#x3092;&#x4F7F;&#x3063;&#x305F;spec&#x304C;&#x901F;&#x3044;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content command" ref="08_toggle/toggle_slides/5">
+<pre><code>$ rake spec:mocked
+(in /Users/adelcambre/p/ey_sso)
+...............................*.....**......
+.............................................
+.................
+Finished in <span class="callout">11.161133 seconds</span>
+
+107 examples, 0 failures, 3 pending
+</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="08_toggle/toggle_slides/6">
+<h1>And very thorough integration tests</h1>
+
+<h1>&#x7D71;&#x5408;&#x30C6;&#x30B9;&#x30C8;&#x304C;&#x5FB9;&#x5E95;</h1>
+
+<h2>with a live backend</h2>
+
+<h2>&#x30D0;&#x30C3;&#x30AF;&#x30A8;&#x30F3;&#x30C9;&#x304C;&#x672C;&#x7269;</h2></div>
+</div><div class="slide" data-transition="none"><div class="content command" ref="08_toggle/toggle_slides/7">
+<pre><code>$ rake spec:unmocked
+(in /Users/adelcambre/p/ey_sso)
+...............................*.....**......
+.............................................
+.................
+Finished in <span class="callout">411.887547 seconds</span>
+
+107 examples, 0 failures, 3 pending
+</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="08_toggle/toggle_slides/8">
+<h1>The tests do not have to change</h1>
+
+<h1>&#x30C6;&#x30B9;&#x30C8;&#x3092;&#x5F04;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x7121;&#x3044;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="08_toggle/toggle_slides/9">
+<h1>So Continuous Integration runs both</h1>
+
+<h1>&#x3060;&#x304B;&#x3089;&#x7D99;&#x7D9A;&#x30C6;&#x30B9;&#x30C8;&#x3067;&#x4E21;&#x65B9;&#x8D70;&#x308B;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content command" ref="08_toggle/toggle_slides/10">
+<p><code><pre>
+$ rake spec:ci
+(in /Users/adelcambre/p/ey_sso)
+...............................*.....**......
+.............................................
+.................
+Finished in <span class="callout">429.935862 seconds</span>
+107 examples, 0 failures, 6 pending
+</pre></code></p>
+
+<pre><code>
+(in /Users/adelcambre/p/ey_sso)
+...............................*.....**......
+.............................................
+.................
+Finished in <span class="callout">11.421828 seconds</span>
+107 examples, 0 failures, 3 pending
+rake spec:ci 7:32.42 total
+</code></pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="08_toggle/toggle_slides/11">
+<h1>We don't deploy until both suites are green</h1>
+
+<h1>&#x5F0A;&#x793E;&#x3067;&#x306F;&#x4E21;&#x65B9;&#x306E;&#x30C6;&#x30B9;&#x30C8;&#x30B9;&#x30A4;&#x30FC;&#x30C8;&#x304C;&#x30D1;&#x30B9;&#x3059;&#x308B;&#x307E;&#x3067;&#x306F;&#x30C7;&#x30D7;&#x30ED;&#x30A4;&#x3057;&#x307E;&#x305B;&#x3093;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="08_toggle/toggle_slides/12">
+<h1>CI Validates the fake</h1>
+
+<h1>CI&#xFF08;&#x7D99;&#x7D9A;&#x7684;&#x30A4;&#x30F3;&#x30C6;&#x30B0;&#x30EC;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#xFF09;&#x3067;&#x30D5;&#x30A7;&#x30A4;&#x30AF;&#x3092;&#x8A8D;&#x8A3C;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="08_toggle/toggle_slides/13">
+<h1>This gives you composability</h1>
+
+<h1>&#x3053;&#x308C;&#x3067;&#x7D44;&#x7ACB;&#x304C;&#x53EF;&#x80FD;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="08_toggle/toggle_slides/14">
+<h1>So when writing an app that uses the client</h1>
+
+<h1>&#x3053;&#x306E;&#x30AF;&#x30E9;&#x30A4;&#x30A2;&#x30F3;&#x30C8;&#x3092;&#x4F7F;&#x3063;&#x305F;&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3092;&#x66F8;&#x304F;&#x6642;&#x306B;&#x306F;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="08_toggle/toggle_slides/15">
+<h1>You can toggle the fake on</h1>
+
+<h1>&#x30D5;&#x30A7;&#x30A4;&#x30AF;&#x3092;&#x4F7F;&#x3044;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="08_toggle/toggle_slides/16">
+<h1>But with a good test suite in the client</h1>
+
+<h1>&#x30AF;&#x30E9;&#x30A4;&#x30A2;&#x30F3;&#x30C8;&#x306B;&#x826F;&#x3044;&#x30C6;&#x30B9;&#x30C8;&#x30B9;&#x30A4;&#x30FC;&#x30C8;&#x3092;&#x4ED8;&#x3051;&#x308B;&#x4E8B;&#x3067;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="08_toggle/toggle_slides/17">
+<h1>You have verified the fake correct</h1>
+
+<h1>&#x30D5;&#x30A7;&#x30A4;&#x30AF;&#x306E;&#x6B63;&#x5F53;&#x6027;&#x3092;&#x8A3C;&#x660E;&#x3057;&#x307E;&#x3057;&#x305F;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="08_toggle/toggle_slides/18">
+<h1>So you rarely need to run without the fake</h1>
+
+<h1>&#x30D5;&#x30A7;&#x30A4;&#x30AF;&#x306A;&#x3057;&#x3067;&#x8D70;&#x3089;&#x305B;&#x308B;&#x4E8B;&#x306F;&#x3042;&#x307E;&#x308A;&#x3042;&#x308A;&#x307E;&#x305B;&#x3093;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="10_conclusion/conclusion_slides/1">
+<h1>Downsides to this pattern?</h1>
+
+<h1>&#x3053;&#x306E;&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x306E;&#x554F;&#x984C;&#x70B9;</h1>
+
+<ul>
+<li>assume unmocked in your tests</li>
+<li>&#x73FE;&#x5B58;&#x306E;&#x30C6;&#x30B9;&#x30C8;&#x306F;&#x30E2;&#x30C3;&#x30AF;&#x3092;&#x4F7F;&#x3063;&#x3066;&#x3044;&#x306A;&#x3044;&#x4E8B;&#x304C;&#x524D;&#x63D0;</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="10_conclusion/conclusion_slides/2">
+<h1>Downsides to this pattern?</h1>
+
+<h1>&#x3053;&#x306E;&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x306E;&#x554F;&#x984C;&#x70B9;</h1>
+
+<ul>
+<li>Have to always clean up state</li>
+<li>&#x30C6;&#x30B9;&#x30C8;&#x306E;&#x5EA6;&#x306B;&#x72B6;&#x614B;&#x3092;&#x521D;&#x671F;&#x5316;&#x3059;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308B;</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="10_conclusion/conclusion_slides/3">
+<h1>Downsides to this pattern?</h1>
+
+<h1>&#x3053;&#x306E;&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x306E;&#x554F;&#x984C;&#x70B9;</h1>
+
+<ul>
+<li>Unique data conflicts</li>
+<li>&#x30E6;&#x30CB;&#x30FC;&#x30AF;&#x306A;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x885D;&#x7A81;</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="10_conclusion/conclusion_slides/4">
+<h1>Next steps</h1>
+
+<h1>&#x6B21;&#x306F;&#xFF1F;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="10_conclusion/conclusion_slides/5">
+<h1>Artifice just takes a Rack App</h1>
+
+<h1>Artifice &#x3067;&#x306F; Rack &#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3092;&#x4F7F;&#x3044;&#x307E;&#x3059;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="10_conclusion/conclusion_slides/6">
+<h1>The server code is a Rack App</h1>
+
+<h1>&#x30B5;&#x30FC;&#x30D0;&#x306F; Rack &#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3067;&#x3059;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="10_conclusion/conclusion_slides/7">
+<h1>Why not use the actual server as the mock?</h1>
+
+<h1>&#x5B9F;&#x969B;&#x306E;&#x30B5;&#x30FC;&#x30D0;&#x3092;&#x30E2;&#x30C3;&#x30AF;&#x3068;&#x3057;&#x3066;&#x4F7F;&#x3048;&#x306A;&#x3044;&#x3067;&#x3057;&#x3087;&#x3046;&#x304B;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="10_conclusion/conclusion_slides/8">
+<h1>We have done this in a few limited cases</h1>
+
+<h1>&#x9650;&#x3089;&#x308C;&#x305F;&#x30B1;&#x30FC;&#x30B9;&#x3067;&#x306F;&#x5B9F;&#x8DF5;&#x6E08;&#x307F;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="10_conclusion/conclusion_slides/9">
+<pre class="sh_ruby"><code>Artifice.activate_with(
+  Rack::Builder.new do
+    map "#{URL_FOR_EY_SSO}/" do
+      run HaxMockMoiApi.new
+    end
+    map "#{URL_FOR_TRESFIESTAS}/" do
+      run Tresfiestas::Application
+    end
+    map "#{URL_FOR_AWSM}/" do
+      run FakeAWSM
+    end
+    map "#{URL_FOR_LISONJA}/" do
+      run Lisonja
+    end
+    map "#{URL_FOR_SECRET_ADMIN}/" do
+      run SecretAdmin
+    end
+  end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="10_conclusion/conclusion_slides/10">
+<h1>Not enough experience to recommend it yet</h1>
+
+<h1>&#x307E;&#x3060;&#x7D4C;&#x9A13;&#x4E0D;&#x8DB3;&#x3067;&#x63A8;&#x5968;&#x3059;&#x308B;&#x307B;&#x3069;&#x3067;&#x306F;&#x306A;&#x3044;</h1></div>
+</div><div class="slide" data-transition="none"><div class="content larger" ref="10_conclusion/conclusion_slides/11">
+<h1>Thanks!</h1>
+
+<h2>&#x3054;&#x9759;&#x8074;&#x6709;&#x308A;&#x96E3;&#x3046;&#x3054;&#x3056;&#x3044;&#x307E;&#x3057;&#x305F;</h2></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="10_conclusion/conclusion_slides/12">
+<h1>Thanks to Hiro Asari</h1>
+
+<h1>&#x65E5;&#x672C;&#x8A9E;&#x5B57;&#x5E55;&#x306F;&#x6D45;&#x91CC;&#x3055;&#x3093;</h1>
+
+<h2>for Japanese translations</h2></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="10_conclusion/conclusion_slides/13">
+<h1>Thanks to Scott Chacon</h1>
+
+<h2>&#x30B9;&#x30B3;&#x30C3;&#x30C8;&#x30FB;&#x30B7;&#x30E3;&#x30B3;&#x30FC;&#x30F3;&#x6C0F;</h2>
+
+<h2>for showoff</h2>
+
+<h2>showoff &#x306E;&#x958B;&#x767A;&#x8005;</h2>
+
+<h3>https://github.com/schacon/showoff</h3></div>
+</div><div class="slide" data-transition="none"><div class="content right" ref="10_conclusion/conclusion_slides/14">
+<h1><span class="callout">Questions?</span></h1>
+
+<h1>&#x8CEA;&#x554F;&#x306A;&#x3069;&#x3042;&#x308C;&#x3070;</h1>
+
+<h2>http://twitter.com/adelcambre</h2>
+
+<h2>http://github.com/adelcambre</h2>
+
+<h2>http://flickr.com/adelcambre</h2></div>
+</div></div>
+
+</body>
+</html>
